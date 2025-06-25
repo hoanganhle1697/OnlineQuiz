@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
 using OnlineQuiz.Domain.Entities;
+using System.IO;
 
 namespace OnlineQuiz.Repository.SqlServer
 {
@@ -9,8 +10,9 @@ namespace OnlineQuiz.Repository.SqlServer
     {
         public OnlineQuizDbContext CreateDbContext(string[] args)
         {
+            var basePath = Path.GetDirectoryName(typeof(OnlineQuizDbContextFactory).Assembly.Location);
             var configuration = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
+                .SetBasePath(basePath!)
                 .AddJsonFile("appsettings.json", optional: false)
                 .Build();
 
