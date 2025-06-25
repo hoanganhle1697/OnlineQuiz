@@ -15,7 +15,7 @@ namespace OnlineQuiz.Repository.SqlServer
                 .Build();
 
             var optionsBuilder = new DbContextOptionsBuilder<OnlineQuizDbContext>();
-            optionsBuilder.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
+            optionsBuilder.UseSqlServer(configuration.GetConnectionString("SqlConnection"));
 
             return new OnlineQuizDbContext(optionsBuilder.Options);
         }

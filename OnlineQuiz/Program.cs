@@ -41,7 +41,7 @@ namespace OnlineQuiz
                     ValidateIssuer = true,
                     ValidateAudience = true,
                     ValidAudience = builder.Configuration["Jwt:ValidAudience"],
-                    ValidIssuer = builder.Configuration["Jwt:ValidIsuaer"],
+                    ValidIssuer = builder.Configuration["Jwt:ValidIssuer"],
                     IssuerSigningKey = new Microsoft.IdentityModel.Tokens.SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes(builder.Configuration["Jwt:SecretKey"]!))
                 };
             });
