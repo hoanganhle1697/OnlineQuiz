@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using OnlineQuiz.Domain.Entities;
 using OnlineQuiz.Infrastructure.Data;
+using OnlineQuiz.Application.Services.Interfaces;
+using OnlineQuiz.Application.Services;
 using System.IdentityModel.Tokens.Jwt;
 
 
@@ -73,7 +75,7 @@ namespace OnlineQuiz
 
             builder.Services.AddAutoMapper(typeof(OnlineQuiz.Application.Mappings.AutoMapperProfile));
 
-            builder.Services.AddScoped<OnlineQuiz.Application.Services.Interfaces.IAuthServices, OnlineQuiz.Application.Services.AuthServices>();
+            builder.Services.AddScoped<IAuthServices, AuthServices>();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
