@@ -1,0 +1,1 @@
+dotnet ef migrations add TestMigration --project OnlineQuiz.Repository.SqlServer --startup-project OnlineQuiz -- --no-build

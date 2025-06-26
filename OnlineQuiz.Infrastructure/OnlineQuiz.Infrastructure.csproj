@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\OnlineQuiz.Domain\OnlineQuiz.Domain.csproj" />
+    <Folder Include="Repositories\" />
   </ItemGroup>
 
 </Project>

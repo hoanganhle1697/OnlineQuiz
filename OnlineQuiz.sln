@@ -5,11 +5,11 @@ VisualStudioVersion = 17.13.35825.156 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineQuiz.Api", "OnlineQuiz\OnlineQuiz.Api.csproj", "{745D9711-7D29-41BF-B80D-93C7AAAC3E5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineQuiz.Repository.Abstractions", "OnlineQuiz.Repository.Abstraction\OnlineQuiz.Repository.Abstractions.csproj", "{8FA6A7C8-306F-47AC-8DDC-D61805E044B2}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineQuiz.Repository.SqlServer", "OnlineQuiz.Repository.SqlServer\OnlineQuiz.Repository.SqlServer.csproj", "{85CF143E-893C-4006-B2BE-C267BAE167BE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineQuiz.Infrastructure", "OnlineQuiz.Infrastructure\OnlineQuiz.Infrastructure.csproj", "{85CF143E-893C-4006-B2BE-C267BAE167BE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineQuiz.Domain", "OnlineQuiz.Domain\OnlineQuiz.Domain.csproj", "{62C7B362-159D-4B81-BA41-1C967D007432}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineQuiz.Application", "OnlineQuiz.Application\OnlineQuiz.Application.csproj", "{29430C13-FD10-4654-B629-A1EF3086A7A8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,10 +21,6 @@ Global
 		{745D9711-7D29-41BF-B80D-93C7AAAC3E5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{745D9711-7D29-41BF-B80D-93C7AAAC3E5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{745D9711-7D29-41BF-B80D-93C7AAAC3E5E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8FA6A7C8-306F-47AC-8DDC-D61805E044B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8FA6A7C8-306F-47AC-8DDC-D61805E044B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8FA6A7C8-306F-47AC-8DDC-D61805E044B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8FA6A7C8-306F-47AC-8DDC-D61805E044B2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{85CF143E-893C-4006-B2BE-C267BAE167BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{85CF143E-893C-4006-B2BE-C267BAE167BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{85CF143E-893C-4006-B2BE-C267BAE167BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +29,10 @@ Global
 		{62C7B362-159D-4B81-BA41-1C967D007432}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62C7B362-159D-4B81-BA41-1C967D007432}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62C7B362-159D-4B81-BA41-1C967D007432}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29430C13-FD10-4654-B629-A1EF3086A7A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29430C13-FD10-4654-B629-A1EF3086A7A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29430C13-FD10-4654-B629-A1EF3086A7A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29430C13-FD10-4654-B629-A1EF3086A7A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
